@@ -1,0 +1,22 @@
+[
+  {
+    "code": "fb",
+    "name": "Fenerbahçe",
+    "colorCodes": ["#FFFF00","#0023A3"]
+  },
+  {
+    "code": "gs",
+    "name": "Galatasaray",
+    "colorCodes": ["#FCB514","#A32638"]
+  },
+  {
+    "code": "bjk",
+    "name": "Beşiktaş",
+    "colorCodes": ["#EEEEEE","#444444"]
+  },
+  {
+    "code": "ts",
+    "name": "Trabzonspor",
+    "colorCodes": ["#66CCEB","#6B0000"]
+  }
+]

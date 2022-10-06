@@ -1,6 +1,5 @@
-package com.ekalyoncu.footballsquads.ui.players
+package com.ekalyoncu.footballsquads.ui
 
-import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,13 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import com.ekalyoncu.footballsquads.R
 
 class PlayersFragment : Fragment() {
-
-    private val viewModel: PlayersViewModel by viewModels()
 
     private val arguments: PlayersFragmentArgs by navArgs()
 

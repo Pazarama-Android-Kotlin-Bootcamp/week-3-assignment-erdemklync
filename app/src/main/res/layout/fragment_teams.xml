@@ -8,7 +8,7 @@
     android:paddingHorizontal="24dp"
     android:paddingVertical="36dp"
     android:background="@drawable/bg_teams"
-    tools:context=".ui.teams.TeamsFragment">
+    tools:context=".ui.TeamsFragment">
 
     <TextView
         android:id="@+id/teams_title"
