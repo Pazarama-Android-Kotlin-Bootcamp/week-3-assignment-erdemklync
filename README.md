@@ -1,9 +1,9 @@
 
 <table align="center">
   <tr>
-    <td><img src="images/1.png" height="600px" /></td>
-    <td><img src="images/2.png" height="600px" /></td>
-    <td><img src="images/3.png" height="600px" /></td>
+    <td><img src="images/1.png" height="500px" /></td>
+    <td><img src="images/2.png" height="500px" /></td>
+    <td><img src="images/3.png" height="500px" /></td>
   </tr>
 </table>
 
