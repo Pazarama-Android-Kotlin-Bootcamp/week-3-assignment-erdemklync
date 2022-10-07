@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ekalyoncu.footballsquads.R
 import com.ekalyoncu.footballsquads.model.Team
-import com.ekalyoncu.footballsquads.repository.TeamsRepository
+import com.ekalyoncu.footballsquads.repository.TeamRepository
 import com.ekalyoncu.footballsquads.ui.adapters.TeamAdapter
 import com.ekalyoncu.footballsquads.ui.listeners.TeamListener
 
@@ -31,7 +31,7 @@ class TeamListFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         teamsRecyclerView.adapter = TeamAdapter(
-            TeamsRepository.getTeamList(requireContext()),
+            TeamRepository.getTeamList(requireContext()),
             object : TeamListener{
                 override fun onClick(team: Team) {
                     val action = TeamListFragmentDirections.actionTeamListFragmentToTeamDetailFragment(team)

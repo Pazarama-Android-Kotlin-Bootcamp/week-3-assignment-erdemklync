@@ -25,6 +25,9 @@ class TeamDetailFragment : Fragment() {
     private lateinit var playersConstraintLayout: ConstraintLayout
     private lateinit var teamLogo: ImageView
     private lateinit var teamName: TextView
+    private lateinit var teamCity: TextView
+    private lateinit var teamYear: TextView
+    private lateinit var teamStadium: TextView
     private lateinit var playerPhoto: ImageView
     private lateinit var playerName: TextView
     private lateinit var playerValue: TextView
@@ -57,6 +60,9 @@ class TeamDetailFragment : Fragment() {
         playersConstraintLayout = view.findViewById(R.id.players_constraint_layout)
         teamLogo = view.findViewById(R.id.detail_team_logo)
         teamName = view.findViewById(R.id.detail_team_name)
+        teamCity = view.findViewById(R.id.city_value)
+        teamStadium = view.findViewById(R.id.stadium_value)
+        teamYear = view.findViewById(R.id.year_value)
         playerPhoto = view.findViewById(R.id.player_photo)
         playerName = view.findViewById(R.id.player_name)
         playerValue = view.findViewById(R.id.player_value)
@@ -64,6 +70,10 @@ class TeamDetailFragment : Fragment() {
         teamLogo.setTeamLogo(team)
         teamName.text = team.name
         teamName.setTextColor(Color.parseColor(team.primaryColor))
+
+        teamCity.text = team.city
+        teamYear.text = team.year.toString()
+        teamStadium.text = team.stadium
 
         playerPhoto.setPlayerPhoto(team)
         playerName.text = team.player.name

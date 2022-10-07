@@ -10,6 +10,9 @@ data class Team(
     val name: String = "",
     val primaryColor: String,
     val secondaryColor: String,
+    val city: String,
+    val stadium: String,
+    val year: Int,
     val player: Player,
 ): Parcelable {
     fun getColorArray(): IntArray {
