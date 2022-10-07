@@ -42,7 +42,7 @@ class TeamDetailFragment : Fragment() {
         initView(view)
 
         val gradient = GradientDrawable(
-            GradientDrawable.Orientation.BR_TL,
+            GradientDrawable.Orientation.TL_BR,
             team.getColorArray(),
         ).also {
             it.cornerRadius = 0f
@@ -63,7 +63,7 @@ class TeamDetailFragment : Fragment() {
 
         teamLogo.setTeamLogo(team)
         teamName.text = team.name
-        teamName.setTextColor(Color.parseColor(team.colorCodes[1]))
+        teamName.setTextColor(Color.parseColor(team.primaryColor))
 
         playerPhoto.setPlayerPhoto(team)
         playerName.text = team.player.name

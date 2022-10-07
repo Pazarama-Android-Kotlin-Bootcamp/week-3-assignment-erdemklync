@@ -8,12 +8,14 @@ import kotlinx.parcelize.Parcelize
 data class Team(
     val code: String = "",
     val name: String = "",
-    val colorCodes: List<String>,
+    val primaryColor: String,
+    val secondaryColor: String,
     val player: Player,
 ): Parcelable {
     fun getColorArray(): IntArray {
-        return this.colorCodes.map {
-            Color.parseColor(it)
-        }.toIntArray()
+        return intArrayOf(
+            Color.parseColor(this.primaryColor),
+            Color.parseColor(this.secondaryColor),
+        )
     }
 }

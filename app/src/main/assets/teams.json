@@ -2,7 +2,8 @@
   {
     "code": "fb",
     "name": "Fenerbahçe",
-    "colorCodes": ["#FFFF00","#0023A3"],
+    "primaryColor": "#0023A3",
+    "secondaryColor": "#FFFF00",
     "player": {
       "name": "Altay Bayındır",
       "value": "15.000.000 €"
@@ -11,16 +12,31 @@
   {
     "code": "gs",
     "name": "Galatasaray",
-    "colorCodes": ["#FCB514","#A32638"]
+    "primaryColor": "#A32638",
+    "secondaryColor": "#FCB514",
+    "player": {
+      "name": "Mario Icardi",
+      "value": "22.000.000 €"
+    }
   },
   {
     "code": "bjk",
     "name": "Beşiktaş",
-    "colorCodes": ["#EEEEEE","#444444"]
+    "primaryColor": "#444444",
+    "secondaryColor": "#EEEEEE",
+    "player": {
+      "name": "Dele Alli",
+      "value": "16.000.000 €"
+    }
   },
   {
     "code": "ts",
     "name": "Trabzonspor",
-    "colorCodes": ["#66CCEB","#6B0000"]
+    "primaryColor": "#6B0000",
+    "secondaryColor": "#66CCEB",
+    "player": {
+      "name": "Yusuf Yazıcı",
+      "value": "17.000.000 €"
+    }
   }
 ]
