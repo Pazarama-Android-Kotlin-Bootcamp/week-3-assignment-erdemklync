@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ekalyoncu.footballsquads.R
 import com.ekalyoncu.footballsquads.model.Team
 import com.ekalyoncu.footballsquads.ui.listeners.TeamListener
+import com.ekalyoncu.footballsquads.util.setTeamLogo
 
 class TeamAdapter(
     private val teamList: List<Team>,
@@ -22,7 +23,7 @@ class TeamAdapter(
 
         fun bind(team: Team, listener: TeamListener){
             teamName.text = team.name
-            //teamLogo
+            teamLogo.setTeamLogo(team)
 
             itemView.setOnClickListener {
                 listener.onClick(team)

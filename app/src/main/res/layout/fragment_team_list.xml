@@ -5,17 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingVertical="48dp"
     android:paddingHorizontal="24dp"
-    android:paddingVertical="36dp"
     android:background="@drawable/bg_teams"
-    tools:context=".ui.TeamsFragment">
+    tools:context=".ui.TeamListFragment">
 
     <TextView
         android:id="@+id/teams_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Takımını seç"
+        android:text="@string/teams_title"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="24sp"
@@ -24,28 +24,15 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/team_card_view"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/teams_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:contentPadding="4dp"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        app:cardUseCompatPadding="true"
-        app:cardCornerRadius="16dp"
-        app:cardBackgroundColor="#66FFFFFF"
-        app:cardElevation="0dp"
+        android:layout_marginTop="24dp"
+        tools:listitem="@layout/item_team"
 
         app:layout_constraintTop_toBottomOf="@id/teams_title"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/teams_recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/item_team"
-            />
-
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,7 +13,7 @@ object TeamsRepository {
 
         val teamsArray = Gson().fromJson(
             teamsJsonData,
-            Array<Team>::class.java
+            Array<Team>::class.java,
         )
 
         return teamsArray.toList()

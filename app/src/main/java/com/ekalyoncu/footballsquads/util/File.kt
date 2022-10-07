@@ -5,7 +5,7 @@ import java.io.InputStream
 
 // https://stackoverflow.com/a/65879428
 fun readTeamsJsonData(context: Context): String? {
-    var json: String? = null
+    val json: String?
     try {
         val  inputStream: InputStream = context.assets.open("teams.json")
         json = inputStream.bufferedReader().use{it.readText()}

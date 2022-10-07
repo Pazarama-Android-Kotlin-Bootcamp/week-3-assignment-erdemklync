@@ -3,22 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/teamsFragment">
+    app:startDestination="@id/teamListFragment">
+
 
     <fragment
-        android:id="@+id/teamsFragment"
-        android:name="com.ekalyoncu.footballsquads.ui.TeamsFragment"
-        android:label="fragment_teams"
-        tools:layout="@layout/fragment_teams" >
+        android:id="@+id/teamListFragment"
+        android:name="com.ekalyoncu.footballsquads.ui.TeamListFragment"
+        android:label="fragment_team_list"
+        tools:layout="@layout/fragment_team_list" >
         <action
-            android:id="@+id/action_teamsFragment_to_playersFragment"
-            app:destination="@id/playersFragment" />
+            android:id="@+id/action_teamListFragment_to_teamDetailFragment"
+            app:destination="@id/teamDetailFragment" />
     </fragment>
     <fragment
-        android:id="@+id/playersFragment"
-        android:name="com.ekalyoncu.footballsquads.ui.PlayersFragment"
-        android:label="fragment_players"
-        tools:layout="@layout/fragment_players" >
+        android:id="@+id/teamDetailFragment"
+        android:name="com.ekalyoncu.footballsquads.ui.TeamDetailFragment"
+        android:label="fragment_team_detail"
+        tools:layout="@layout/fragment_team_detail" >
         <argument
             android:name="team"
             app:argType="com.ekalyoncu.footballsquads.model.Team" />
