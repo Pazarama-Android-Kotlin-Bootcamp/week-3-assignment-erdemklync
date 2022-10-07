@@ -14,7 +14,7 @@
         android:id="@+id/detail_team_logo"
         android:layout_width="128dp"
         android:layout_height="128dp"
-        android:src="@drawable/img_team_fb"
+        tools:src="@drawable/img_team_fb"
 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,8 +25,8 @@
         android:id="@+id/detail_team_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Fenerbahçe"
+        android:layout_marginTop="16dp"
+        tools:text="Fenerbahçe"
         android:textSize="20sp"
         android:fontFamily="@font/poppins"
         android:textStyle="bold"
@@ -38,4 +38,81 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+
+        app:layout_constraintTop_toBottomOf="@id/detail_team_name">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/icon_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"
+                app:tint="#FFBF00"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="En değerli oyuncu"
+                android:includeFontPadding="false"
+
+                app:layout_constraintTop_toTopOf="@id/icon_star"
+                app:layout_constraintBottom_toBottomOf="@id/icon_star"
+                app:layout_constraintStart_toEndOf="@id/icon_star"
+                />
+
+            <ImageView
+                android:id="@+id/player_photo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                tools:src="@drawable/img_player_fb"
+
+                app:layout_constraintTop_toBottomOf="@id/icon_star"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/player_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                tools:text="Altay Bayındır"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:includeFontPadding="false"
+
+                app:layout_constraintTop_toTopOf="@id/player_photo"
+                app:layout_constraintStart_toEndOf="@id/player_photo"
+                app:layout_constraintBottom_toTopOf="@id/player_value"
+                />
+
+            <TextView
+                android:id="@+id/player_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                tools:text="15.000.000 €"
+                android:includeFontPadding="false"
+
+                app:layout_constraintTop_toBottomOf="@id/player_name"
+                app:layout_constraintBottom_toBottomOf="@id/player_photo"
+                app:layout_constraintStart_toEndOf="@id/player_photo"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.ekalyoncu.footballsquads.ui
 
+import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,6 +13,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.ekalyoncu.footballsquads.R
 import com.ekalyoncu.footballsquads.model.Team
+import com.ekalyoncu.footballsquads.util.setPlayerPhoto
 import com.ekalyoncu.footballsquads.util.setTeamLogo
 
 class TeamDetailFragment : Fragment() {
@@ -23,6 +25,9 @@ class TeamDetailFragment : Fragment() {
     private lateinit var playersConstraintLayout: ConstraintLayout
     private lateinit var teamLogo: ImageView
     private lateinit var teamName: TextView
+    private lateinit var playerPhoto: ImageView
+    private lateinit var playerName: TextView
+    private lateinit var playerValue: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,8 +57,16 @@ class TeamDetailFragment : Fragment() {
         playersConstraintLayout = view.findViewById(R.id.players_constraint_layout)
         teamLogo = view.findViewById(R.id.detail_team_logo)
         teamName = view.findViewById(R.id.detail_team_name)
+        playerPhoto = view.findViewById(R.id.player_photo)
+        playerName = view.findViewById(R.id.player_name)
+        playerValue = view.findViewById(R.id.player_value)
 
         teamLogo.setTeamLogo(team)
         teamName.text = team.name
+        teamName.setTextColor(Color.parseColor(team.colorCodes[1]))
+
+        playerPhoto.setPlayerPhoto(team)
+        playerName.text = team.player.name
+        playerValue.text = team.player.value
     }
 }

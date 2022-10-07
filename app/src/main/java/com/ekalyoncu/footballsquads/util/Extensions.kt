@@ -9,3 +9,9 @@ fun ImageView.setTeamLogo(team: Team){
     val drawable = ResourcesCompat.getDrawable(resources, id, context.theme)
     this.setImageDrawable(drawable)
 }
+
+fun ImageView.setPlayerPhoto(team: Team){
+    val id = resources.getIdentifier("img_player_${team.code}", "drawable", context.packageName)
+    val drawable = ResourcesCompat.getDrawable(resources, id, context.theme)
+    this.setImageDrawable(drawable)
+}

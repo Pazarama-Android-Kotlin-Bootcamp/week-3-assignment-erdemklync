@@ -9,6 +9,7 @@ data class Team(
     val code: String = "",
     val name: String = "",
     val colorCodes: List<String>,
+    val player: Player,
 ): Parcelable {
     fun getColorArray(): IntArray {
         return this.colorCodes.map {

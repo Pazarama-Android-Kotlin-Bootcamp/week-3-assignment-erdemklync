@@ -18,5 +18,4 @@ object TeamsRepository {
 
         return teamsArray.toList()
     }
-
 }

@@ -2,7 +2,11 @@
   {
     "code": "fb",
     "name": "Fenerbahçe",
-    "colorCodes": ["#FFFF00","#0023A3"]
+    "colorCodes": ["#FFFF00","#0023A3"],
+    "player": {
+      "name": "Altay Bayındır",
+      "value": "15.000.000 €"
+    }
   },
   {
     "code": "gs",
