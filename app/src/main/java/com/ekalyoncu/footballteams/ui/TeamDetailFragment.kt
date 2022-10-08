@@ -10,6 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.setFragmentResult
 import androidx.navigation.fragment.navArgs
 import com.ekalyoncu.footballteams.R
 import com.ekalyoncu.footballteams.model.Team
@@ -78,5 +79,11 @@ class TeamDetailFragment : Fragment() {
         playerPhoto.setPlayerPhoto(team)
         playerName.text = team.player.name
         playerValue.text = team.player.value
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        val resultBundle = Bundle().apply { putString("teamName", team.name) }
+        setFragmentResult("requestKey", resultBundle)
     }
 }

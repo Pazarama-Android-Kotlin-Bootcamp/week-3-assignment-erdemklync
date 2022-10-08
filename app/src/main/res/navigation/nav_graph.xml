@@ -22,6 +22,6 @@
         tools:layout="@layout/fragment_team_detail" >
         <argument
             android:name="team"
-            app:argType="com.ekalyoncu.footballsquads.model.Team" />
+            app:argType="com.ekalyoncu.footballteams.model.Team" />
     </fragment>
 </navigation>
