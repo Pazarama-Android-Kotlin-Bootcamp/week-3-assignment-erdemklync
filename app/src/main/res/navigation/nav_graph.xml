@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/teamListFragment"
-        android:name="com.ekalyoncu.footballsquads.ui.TeamListFragment"
+        android:name="com.ekalyoncu.footballteams.ui.TeamListFragment"
         android:label="fragment_team_list"
         tools:layout="@layout/fragment_team_list" >
         <action
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/teamDetailFragment"
-        android:name="com.ekalyoncu.footballsquads.ui.TeamDetailFragment"
+        android:name="com.ekalyoncu.footballteams.ui.TeamDetailFragment"
         android:label="fragment_team_detail"
         tools:layout="@layout/fragment_team_detail" >
         <argument

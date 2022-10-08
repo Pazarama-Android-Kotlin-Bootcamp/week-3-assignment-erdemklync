@@ -1,4 +1,4 @@
-package com.ekalyoncu.footballsquads.ui
+package com.ekalyoncu.footballteams.ui
 
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
@@ -11,10 +11,10 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
-import com.ekalyoncu.footballsquads.R
-import com.ekalyoncu.footballsquads.model.Team
-import com.ekalyoncu.footballsquads.util.setPlayerPhoto
-import com.ekalyoncu.footballsquads.util.setTeamLogo
+import com.ekalyoncu.footballteams.R
+import com.ekalyoncu.footballteams.model.Team
+import com.ekalyoncu.footballteams.util.setPlayerPhoto
+import com.ekalyoncu.footballteams.util.setTeamLogo
 
 class TeamDetailFragment : Fragment() {
 

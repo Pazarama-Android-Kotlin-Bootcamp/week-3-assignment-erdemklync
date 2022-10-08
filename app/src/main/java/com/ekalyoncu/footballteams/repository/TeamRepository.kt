@@ -1,9 +1,9 @@
-package com.ekalyoncu.footballsquads.repository
+package com.ekalyoncu.footballteams.repository
 
 import android.content.Context
-import com.ekalyoncu.footballsquads.R
-import com.ekalyoncu.footballsquads.model.Team
-import com.ekalyoncu.footballsquads.util.readTeamsJsonData
+import com.ekalyoncu.footballteams.R
+import com.ekalyoncu.footballteams.model.Team
+import com.ekalyoncu.footballteams.util.readTeamsJsonData
 import com.google.gson.Gson
 
 object TeamRepository {

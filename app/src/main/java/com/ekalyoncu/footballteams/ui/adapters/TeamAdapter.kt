@@ -1,4 +1,4 @@
-package com.ekalyoncu.footballsquads.ui.adapters
+package com.ekalyoncu.footballteams.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,10 +6,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.ekalyoncu.footballsquads.R
-import com.ekalyoncu.footballsquads.model.Team
-import com.ekalyoncu.footballsquads.ui.listeners.TeamListener
-import com.ekalyoncu.footballsquads.util.setTeamLogo
+import com.ekalyoncu.footballteams.R
+import com.ekalyoncu.footballteams.model.Team
+import com.ekalyoncu.footballteams.ui.listeners.TeamListener
+import com.ekalyoncu.footballteams.util.setTeamLogo
 
 class TeamAdapter(
     private val teamList: List<Team>,

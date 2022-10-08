@@ -1,6 +1,6 @@
-package com.ekalyoncu.footballsquads.repository
+package com.ekalyoncu.footballteams.repository
 
-import com.ekalyoncu.footballsquads.R
+import com.ekalyoncu.footballteams.R
 
 object PlayerRepository {
 

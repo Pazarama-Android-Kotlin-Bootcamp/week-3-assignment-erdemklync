@@ -1,11 +1,11 @@
-package com.ekalyoncu.footballsquads.util
+package com.ekalyoncu.footballteams.util
 
 import android.widget.ImageView
 import androidx.core.content.res.ResourcesCompat
-import com.ekalyoncu.footballsquads.R
-import com.ekalyoncu.footballsquads.model.Team
-import com.ekalyoncu.footballsquads.repository.PlayerRepository
-import com.ekalyoncu.footballsquads.repository.TeamRepository
+import com.ekalyoncu.footballteams.R
+import com.ekalyoncu.footballteams.model.Team
+import com.ekalyoncu.footballteams.repository.PlayerRepository
+import com.ekalyoncu.footballteams.repository.TeamRepository
 
 fun ImageView.setTeamLogo(team: Team){
     val id = TeamRepository.teamDrawables.getOrElse(team.code){ R.drawable.img_default }

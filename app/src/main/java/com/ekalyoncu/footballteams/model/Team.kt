@@ -1,4 +1,4 @@
-package com.ekalyoncu.footballsquads.model
+package com.ekalyoncu.footballteams.model
 
 import android.graphics.Color
 import android.os.Parcelable

@@ -1,4 +1,4 @@
-package com.ekalyoncu.footballsquads.util
+package com.ekalyoncu.footballteams.util
 
 import android.content.Context
 import java.io.InputStream

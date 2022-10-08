@@ -1,4 +1,4 @@
-package com.ekalyoncu.footballsquads
+package com.ekalyoncu.footballteams
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

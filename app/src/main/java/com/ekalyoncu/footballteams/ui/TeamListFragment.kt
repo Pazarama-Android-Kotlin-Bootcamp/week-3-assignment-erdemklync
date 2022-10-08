@@ -1,4 +1,4 @@
-package com.ekalyoncu.footballsquads.ui
+package com.ekalyoncu.footballteams.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,11 +8,11 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.ekalyoncu.footballsquads.R
-import com.ekalyoncu.footballsquads.model.Team
-import com.ekalyoncu.footballsquads.repository.TeamRepository
-import com.ekalyoncu.footballsquads.ui.adapters.TeamAdapter
-import com.ekalyoncu.footballsquads.ui.listeners.TeamListener
+import com.ekalyoncu.footballteams.R
+import com.ekalyoncu.footballteams.model.Team
+import com.ekalyoncu.footballteams.repository.TeamRepository
+import com.ekalyoncu.footballteams.ui.adapters.TeamAdapter
+import com.ekalyoncu.footballteams.ui.listeners.TeamListener
 
 class TeamListFragment: Fragment() {
 

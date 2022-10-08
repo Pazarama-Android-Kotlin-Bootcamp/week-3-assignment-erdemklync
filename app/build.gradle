@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.ekalyoncu.footballsquads'
+    namespace 'com.ekalyoncu.footballteams'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.ekalyoncu.footballsquads"
+        applicationId "com.ekalyoncu.footballteams"
         minSdk 21
         targetSdk 33
         versionCode 1

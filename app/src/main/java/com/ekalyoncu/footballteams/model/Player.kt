@@ -1,4 +1,4 @@
-package com.ekalyoncu.footballsquads.model
+package com.ekalyoncu.footballteams.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
